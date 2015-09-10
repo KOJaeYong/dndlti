@@ -1,0 +1,14 @@
+<%@page import="net.slipp.user.UserDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<meta http-equiv="Content-Type" context="text/html" content="charset=utf-8">
+<title>Slipp</title>
+<link rel="Stylesheet" type="text/css" href="/stylesheets/bootstrap.css" media="screen"/>
+<link rel="Stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" media="screen"/>
+<link rel="Stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.css" media="screen"/>
+<link rel="Stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.min.css" media="screen"/>
+<style>
+	body {
+		padding-top: 40px;
+	}
+</style>
