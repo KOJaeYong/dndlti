@@ -7,14 +7,27 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+		
+	<!-- 첫번째 설정 
+	컨트롤러에 해당하는 클래스들을 로딩하기 위해서 
+	특정 디렉토리에 있는 컨트롤러들만 스캔해서 컨트롤러로 인식
+	net.qna.web 패키지에 있는 클래스중에서 
+	컨트롤러에 해당하는 클래스들을 읽어들어서 
+	하나의 url과 컨트롤러를 매핑-->
 	<context:component-scan base-package="net.qna.web" />
 	
+	<!-- 컨트롤러를 인식하는 방식(annotation 기반)-->
 	<mvc:annotation-driven />	
 	
+	<!-- 자바스크립트,css 등을 spring mvc에서 설정하는 방식 -->
 	<mvc:resources location="/images/" mapping="/images/**" />
 	<mvc:resources location="/stylesheets/" mapping="/stylesheets/**" />
 	<mvc:resources location="/javascripts/" mapping="/javascripts/**" />
 	
+	<!-- 뷰에 대한 설정 
+	jsp에 접근할 때 방식 => 스프링mvc에 viewResolver중에
+	InternalResourceViewResolver를 활용 
+	프로젝트 내부에 있는 리소스들을 접근 방법 설정-->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/jsp/"
 		p:suffix=".jsp" />

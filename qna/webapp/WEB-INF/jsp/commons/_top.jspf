@@ -7,29 +7,19 @@
 		<div class="container">
 			<button type="button" class="btn btn-navbar" data-toggle="collapse"
 				data-target=".nav-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span>
 			</button>
-			<a class="brand" href="/">Sustainable Life, Programming, Programmer</a>
+			<a class="brand" href="/">Sustainable Life, Programming,
+				Programmer</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-				<%
-				Object login_userId = session.getAttribute("session_userId");
-				%>
 					<li><a href="/">Home</a></li>
-					<%	
-					if (login_userId == null) {
-					%>
-					<li><a href="/login.jsp">로그인</a></li>
-					<li><a href="/form.jsp">회원가입</a></li>
-					<%
-					} else {
-					%>
-					<li><a href="/logout.jsp">로그아웃</a></li>
-					<li><a href="/">개인정보수정</a></li>
-					<%
-	}
-%>
+					<li><a href="">로그인</a></li>
+					<li><a href="/users/form">회원가입</a></li>
+					<li><a href="">로그아웃</a></li>
+					<li><a href="">개인정보수정</a></li>
 				</ul>
 			</div>
 		</div>

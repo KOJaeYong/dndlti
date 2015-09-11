@@ -1,7 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<%@ include file="./commons/_top.jspf"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>qna</title>
+<%@ include file="./commons/_head.jspf"%>
+</head>
+<body>
+	<%@ include file="./commons/_top.jspf" %>
 	<header class="jumbotron subhead" id="overview">
 	<div class="container">
 		<h1>DNdlti</h1>
